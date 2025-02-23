@@ -1,0 +1,38 @@
+PS C:\Users\ryoya\Documents\kadai> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ryoya\Documents\kadai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/02/23     12:35                git_challenge
+
+
+PS C:\Users\ryoya\Documents\kadai> cd "C:\Users\ryoya\Documents\kadai\git_challenge"
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git init
+Initialized empty Git repository in C:/Users/ryoya/Documents/kadai/git_challenge/.git/
+PS C:\Users\ryoya\Documents\kadai\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git add hello_world.txt
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) cfd968d] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\ryoya\Documents\kadai\git_challenge> echo "こんにちは、世界" >> hello_world.txt
+
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git add hello_world.txt
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git commit -m "日本語訳を追記"
+[main bc902fb] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\ryoya\Documents\kadai\git_challenge> git log
+commit bc902fb8175f259872f130760e89602edf2fd05f (HEAD -> main)
+Author: yugit3030hub <yuua2002357159123@gmail.com>
+Date:   Sun Feb 23 13:21:46 2025 +0900
+
+    日本語訳を追記
+
+commit cfd968d01ecbe01cf687fbc6e13f30b30a9b1ca0
+Author: yugit3030hub <yuua2002357159123@gmail.com>
+Date:   Sun Feb 23 13:15:27 2025 +0900
+
+    hello_world.txtを追加
